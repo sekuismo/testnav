@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Permisos del Navegador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2 class="mb-4 text-center">Prueba de Permisos del Navegador</h2>
+        <div class="row text-center">
+            <div class="col-md-4 my-2">
+                <button id="cameraButton" class="btn btn-primary btn-lg w-100">Acceder a la Cámara</button>
+            </div>
+            <!-- Otros botones -->
+            <div class="col-md-4 my-2">
+                <button id="microphoneButton" class="btn btn-secondary btn-lg w-100">Acceder al Micrófono</button>
+            </div>
+            <div class="col-md-4 my-2">
+                <button id="locationButton" class="btn btn-success btn-lg w-100">Solicitar Geolocalización</button>
+            </div>
+            <div class="col-md-4 my-2">
+                <button id="notificationButton" class="btn btn-warning btn-lg w-100">Solicitar Notificaciones</button>
+            </div>
+            <div class="col-md-4 my-2">
+                <button id="clipboardButton" class="btn btn-info btn-lg w-100">Acceder al Portapapeles</button>
+            </div>
+            <div class="col-md-4 my-2">
+                <button id="bluetoothButton" class="btn btn-danger btn-lg w-100">Acceder a Bluetooth</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor para mostrar el estado de los dispositivos -->
+    <div class="container my-5">
+        <h3 class="mb-4 text-center">Estado de los Dispositivos</h3>
+        <div id="deviceStatusContainer">
+            <!-- Asegúrate de que este elemento exista -->
+            <div id="cameraStatus" class="my-3">
+            </div>
+            <strong>Cámara:</strong> Inactiva
+            <div id="cameraPreview" class="mt-2"></div>
+            <div id="microphoneStatus" class="my-3"></div>
+            <div id="locationStatus" class="my-3"></div>
+            <div id="notificationStatus" class="my-3"></div>
+            <div id="clipboardStatus" class="my-3"></div>
+            <div id="bluetoothStatus" class="my-3"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <!-- Cargar Bootstrap antes de script.js y colocar los scripts al final del body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
